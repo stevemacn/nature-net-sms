@@ -15,8 +15,13 @@ npm install -g firebase-tools
 
 ## Running the code
 
-Again, this is just a quick microservice created to connect twilio to 
+Again, this is just a quick microservice created to connect twilio to firebase. In this case, we plan to just run serve firebase functions on the remote server. Deploy will use Firebase functions feature (which doesn't support external HTTP requests).
 
+```
 firebase serve --only functions --project prod
+```
 
+## Resources 
+
+https://stackoverflow.com/questions/43828039/how-to-login-to-firebase-tools-on-headless-remote-server
 https://firebase.google.com/docs/functions/local-emulator#install_and_configure_the_cloud_functions_shell
